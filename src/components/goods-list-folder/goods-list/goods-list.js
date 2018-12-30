@@ -26,7 +26,7 @@ export default class GoodsList extends Component {
     return (
       <table className="table table-hover">
 
-        <thead align="center" valign="center" className="thead-dark">
+        <thead align="center" valign="center" className="thead-light">
           <tr>
             <th>Название</th>
             <th>Цена</th>

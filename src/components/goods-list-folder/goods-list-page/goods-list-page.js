@@ -37,7 +37,7 @@ export default class GoodsListPage extends Component {
         <SearchPanel onSearchChange={this.onSearchChange}/>
         <GoodsList goods={visibleItems}
                    onAddItem={onAddItem}/>
-        <Link to="/basket" className="btn btn-success">Корзина</Link>
+        <Link to="/basket" className="btn btn-info">Корзина</Link>
       </div>
     );
   }

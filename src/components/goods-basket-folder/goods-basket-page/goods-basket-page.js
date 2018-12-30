@@ -22,8 +22,8 @@ export default class GoodsBasketPage extends Component {
       <div className="goods-basket">
         {content}
         <div className="d-flex justify-content-between">
-          <Link to="/list" className="btn btn-success">Перейти в список товаров</Link>
-          <button className="btn btn-success" onClick={onClearBasket}>Очистить корзину</button>
+          <Link to="/list" className="btn btn-info">Перейти в список товаров</Link>
+          <button className="btn btn-danger" onClick={onClearBasket}>Очистить корзину</button>
         </div>
       </div>
     )

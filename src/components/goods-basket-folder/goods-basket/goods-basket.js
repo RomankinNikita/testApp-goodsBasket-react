@@ -20,13 +20,13 @@ export default class GoodsBasket extends Component {
           <td>{`$${price * amount}`}</td>
           <td>{amount}</td>
           <td>
-            <button className="btn btn-success"
+            <button className="btn btn-warning"
                     onClick={() => {onDeleteOneItem(id)}}>
-             &#8722;
+             <span className="minus-symbol"></span>
             </button>
           </td>
           <td>
-          <button className="btn btn-success"
+          <button className="btn btn-danger"
                     onClick={() => {onDeleteAllItems(id)}}>
               Удалить все
             </button>
@@ -38,7 +38,7 @@ export default class GoodsBasket extends Component {
     return (
       <div>
         <table className="table table-hover">
-          <thead align="center" valign="center" className="thead-dark">
+          <thead align="center" valign="center" className="thead-light">
             <tr>
               <th>Название</th>
               <th>Стоимость</th>
@@ -52,7 +52,7 @@ export default class GoodsBasket extends Component {
             {elements}
           </tbody>
         </table>
-        <span style={{fontWeight: 'bold'}}>{`Всего: $${totalCost}`}</span>
+        <span className="total-cost">{`Всего: $${totalCost}`}</span>
       </div>
     );
   }

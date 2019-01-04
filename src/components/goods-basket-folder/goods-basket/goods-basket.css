@@ -1,0 +1,13 @@
+.minus-symbol {
+  display: block;
+  width: 15px;
+  height: 3px;
+  margin: 10px 5px;
+  background: #fff;
+  position: relative;
+}
+
+.total-cost {
+  font-size: 22px;
+  font-weight: bold;
+}
